@@ -1,0 +1,173 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#102721">
+  <meta name="description" content="TDA'nın yapay zekâ, öğrenme, üretkenlik ve keşif projelerini tek merkezden keşfet.">
+  <meta property="og:title" content="TDA Hub — TDA dünyası tek merkezde">
+  <meta property="og:description" content="TDA'nın bugün keşfedebileceğin projelerini ve yakında gelecek fikirlerini incele.">
+  <title>TDA Hub — TDA dünyası tek merkezde</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#icerik">İçeriğe geç</a>
+  <div class="topline"><span class="status-dot" aria-hidden="true"></span> TDA ekosistemi büyüyor <span class="topline-divider" aria-hidden="true">·</span> <strong>6 proje keşfet</strong></div>
+
+  <header class="nav-shell">
+    <nav class="nav wrap" aria-label="Ana navigasyon">
+      <a class="brand" href="#anasayfa" aria-label="TDA Hub ana sayfa">
+        <span class="brand-mark" aria-hidden="true">
+          <svg viewBox="0 0 36 36" fill="none"><path d="M7 10.5h22M18 10.5v15M23 25.5h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="25.5" r="2.2" fill="currentColor"/></svg>
+        </span>
+        <span class="brand-name">TDA <span>HUB</span></span>
+      </a>
+
+      <button class="menu-toggle" id="menuToggle" type="button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="navLinks">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-links" id="navLinks">
+        <a href="#projeler">Projeler</a>
+        <a href="#yakinda">Yakında</a>
+        <a class="nav-cta" href="https://tdaresmi.vercel.app" target="_blank" rel="noopener noreferrer">TDA Asistan <span aria-hidden="true">↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main id="icerik">
+    <section class="hero" id="anasayfa" aria-labelledby="heroTitle">
+      <div class="hero-grid-glow" aria-hidden="true"></div>
+      <div class="wrap hero-layout">
+        <div class="hero-copy">
+          <div class="hero-label"><span class="status-dot" aria-hidden="true"></span> TDA DİJİTAL EKOSİSTEMİ</div>
+          <h1 id="heroTitle">TDA dünyası<br><span>tek merkezde.</span></h1>
+          <p>Öğrenme, üretkenlik ve keşif için geliştirdiğimiz projeleri incele. Bugün kullanabileceğin ürünleri keşfet; sıradaki fikirlerle tanış.</p>
+          <div class="hero-actions">
+            <a class="button button-lime" href="#projeler">Projeleri keşfet <span aria-hidden="true">↓</span></a>
+            <a class="button button-ghost" href="#yakinda">Yol haritasına göz at <span aria-hidden="true">↗</span></a>
+          </div>
+          <div class="hero-stats" aria-label="TDA Hub özeti">
+            <div class="hero-stat"><strong>06</strong><span>şu an keşfedilebilir</span></div>
+            <span class="stat-separator" aria-hidden="true"></span>
+            <div class="hero-stat"><strong>04</strong><span>yakında</span></div>
+          </div>
+        </div>
+
+        <div class="hero-art" aria-hidden="true">
+          <div class="orbit orbit-one"></div>
+          <div class="orbit orbit-two"></div>
+          <div class="orbit orbit-three"></div>
+          <div class="orbit-node node-one"><span class="orbit-symbol">✳</span></div>
+          <div class="orbit-node node-two"><span class="orbit-symbol">⌁</span></div>
+          <div class="orbit-node node-three"><span class="orbit-symbol">▦</span></div>
+          <div class="orbit-node node-four"><span class="orbit-symbol">ϟ</span></div>
+          <div class="hub-core">
+            <span class="core-spark">✳</span>
+            <span class="core-wordmark">TDA</span>
+            <span class="core-caption">IDEAS IN MOTION</span>
+          </div>
+          <div class="float-label float-label-top"><span class="mini-pulse"></span> Merakla başla</div>
+          <div class="float-label float-label-bottom">Bir fikirden, yeni bir dünyaya <span aria-hidden="true">↗</span></div>
+        </div>
+      </div>
+      <div class="hero-bottom-line" aria-hidden="true"></div>
+    </section>
+
+    <section class="section projects-section" id="projeler" aria-labelledby="projectsTitle">
+      <div class="wrap">
+        <div class="section-head">
+          <div>
+            <span class="eyebrow">ŞİMDİ KEŞFET</span>
+            <h2 id="projectsTitle">TDA projeleri</h2>
+          </div>
+          <p>Her biri farklı bir ihtiyaca göre tasarlandı. İlgini çekeni seç ve yeni bir sekmede aç.</p>
+        </div>
+
+        <div class="project-controls">
+          <label class="search-box" for="projectSearch">
+            <svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" stroke="currentColor" stroke-width="1.8"/><path d="m16 16 4.2 4.2" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+            <input id="projectSearch" type="search" placeholder="Proje ara…" autocomplete="off">
+            <kbd>/</kbd>
+          </label>
+          <div class="filter-list" role="group" aria-label="Projeleri kategoriye göre filtrele">
+            <button class="filter-chip is-active" type="button" data-filter="all" aria-pressed="true">Tümü</button>
+            <button class="filter-chip" type="button" data-filter="learning" aria-pressed="false">AI &amp; öğrenme</button>
+            <button class="filter-chip" type="button" data-filter="tools" aria-pressed="false">Araçlar</button>
+            <button class="filter-chip" type="button" data-filter="simulation" aria-pressed="false">Simülasyon</button>
+            <button class="filter-chip" type="button" data-filter="planning" aria-pressed="false">Planlama</button>
+          </div>
+        </div>
+        <p class="results-count" id="resultsCount" aria-live="polite">6 proje gösteriliyor</p>
+
+        <div class="project-grid" id="projectGrid">
+          <a class="project-card" href="https://tdaresmi.vercel.app" target="_blank" rel="noopener noreferrer" data-category="learning" data-search="tda asistan yapay zeka tarih çok yönlü öğrenme">
+            <div class="card-topline"><span class="project-icon icon-assistant"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M24 7v6m0 22v6M7 24h6m22 0h6M12 12l4.2 4.2m15.6 15.6L36 36m0-24-4.2 4.2m-15.6 15.6L12 36" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/><circle cx="24" cy="24" r="8" stroke="currentColor" stroke-width="2.4"/><circle cx="24" cy="24" r="2.5" fill="currentColor"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">AI &amp; ÖĞRENME</span><h3>TDA Asistan</h3><p>Tarih odağını korurken farklı konularda da yardımcı olan yapay zekâ asistanı.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+
+          <a class="project-card" href="https://tda-echo.vercel.app" target="_blank" rel="noopener noreferrer" data-category="learning" data-search="tda echo ingilizce telaffuz pronunciation konuşma dil">
+            <div class="card-topline"><span class="project-icon icon-echo"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M8 20v8m8-14v20m8-26v32m8-25v18m8-13v8" stroke="currentColor" stroke-width="2.8" stroke-linecap="round"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">AI &amp; ÖĞRENME</span><h3>TDA Echo</h3><p>İngilizce telaffuz pratiğine odaklanan, sesleri duymana ve tekrar etmene yardımcı bir araç.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+
+          <a class="project-card" href="https://tdaqr.vercel.app" target="_blank" rel="noopener noreferrer" data-category="tools" data-search="tda qr karekod qr kod oluşturucu">
+            <div class="card-topline"><span class="project-icon icon-qr"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="8" y="8" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2.6"/><rect x="27" y="8" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2.6"/><rect x="8" y="27" width="13" height="13" rx="2" stroke="currentColor" stroke-width="2.6"/><path d="M28 28h5v5h-5zm8 0h4m-4 4v4m-8 0h5m4 4h5m-1-8v4" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">ARAÇLAR</span><h3>TDA QR</h3><p>QR kodlarını oluşturup paylaşmaya hazırlayabileceğin pratik bir üretim aracı.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+
+          <a class="project-card" href="https://tda-life.vercel.app" target="_blank" rel="noopener noreferrer" data-category="simulation" data-search="tda life dünya simülasyonu yaşam simülasyon">
+            <div class="card-topline"><span class="project-icon icon-life"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><circle cx="24" cy="24" r="16" stroke="currentColor" stroke-width="2.4"/><path d="M8.8 19h30.4M8.8 29h30.4M24 8c4.2 4.4 6.3 9.7 6.3 16S28.2 35.6 24 40c-4.2-4.4-6.3-9.7-6.3-16S19.8 12.4 24 8Z" stroke="currentColor" stroke-width="2"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">SİMÜLASYON</span><h3>TDA Life</h3><p>Canlı bir dünya simülasyonunu keşfet; küçük değişimlerin büyük sistemleri nasıl etkilediğini gör.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+
+          <a class="project-card" href="https://tda-flow.vercel.app" target="_blank" rel="noopener noreferrer" data-category="planning" data-search="tda flow günlük planlama üretkenlik görevler zaman">
+            <div class="card-topline"><span class="project-icon icon-flow"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><rect x="9" y="10" width="30" height="29" rx="6" stroke="currentColor" stroke-width="2.4"/><path d="M16 7v7m16-7v7M9 19h30m-23 7 3 3 6-6m-9 12h15" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">PLANLAMA</span><h3>TDA Flow</h3><p>Günlük planını ve yapılacaklarını düzenleyerek odağını korumana yardımcı olur.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+
+          <a class="project-card" href="https://tda-volt.vercel.app" target="_blank" rel="noopener noreferrer" data-category="learning" data-search="tda volt elektrik öğrenme eğitim devre">
+            <div class="card-topline"><span class="project-icon icon-volt"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M27 5 12 26h11l-2 17 15-22H25l2-16Z" stroke="currentColor" stroke-width="2.6" stroke-linejoin="round"/></svg></span><span class="project-state"><i></i> KULLANIMA AÇIK</span></div>
+            <div class="card-content"><span class="project-category">AI &amp; ÖĞRENME</span><h3>TDA Volt</h3><p>Elektrik kavramlarını adım adım; görsel anlatımlar, alıştırmalar ve mini sınavlarla öğren.</p></div>
+            <div class="card-bottom"><span>Keşfet</span><span class="card-arrow" aria-hidden="true">↗</span></div>
+          </a>
+        </div>
+        <div class="empty-state" id="emptyState" hidden>Bu aramayla eşleşen bir proje bulamadık. Arama sözcüğünü veya kategoriyi değiştirebilirsin.</div>
+      </div>
+    </section>
+
+    <section class="upcoming-section" id="yakinda" aria-labelledby="upcomingTitle">
+      <div class="wrap upcoming-wrap">
+        <div class="section-head upcoming-head">
+          <div><span class="eyebrow eyebrow-light">BİR SONRAKİ ADIM</span><h2 id="upcomingTitle">Ufukta neler var?</h2></div>
+          <p>Bunlar TDA için düşündüğümüz gelecek fikirlerinden seçilmiş bir ön izleme. <strong>Henüz kullanıma açık değiller.</strong></p>
+        </div>
+        <div class="upcoming-grid">
+          <article class="upcoming-card"><span class="upcoming-icon">◎</span><div><span class="coming-label">YAKINDA</span><h3>3D Dünya Atlası</h3><p>Dünyayı keşfetmenin yeni bir yolu.</p></div><span class="upcoming-index">01</span></article>
+          <article class="upcoming-card"><span class="upcoming-icon">◷</span><div><span class="coming-label">YAKINDA</span><h3>TDA Clock</h3><p>Canlı zamanı tek bakışta takip et.</p></div><span class="upcoming-index">02</span></article>
+          <article class="upcoming-card"><span class="upcoming-icon">▤</span><div><span class="coming-label">YAKINDA</span><h3>TDA Notes</h3><p>Fikirlerini yakala, notlarını düzenle.</p></div><span class="upcoming-index">03</span></article>
+          <article class="upcoming-card"><span class="upcoming-icon">✧</span><div><span class="coming-label">YAKINDA</span><h3>Güneş Sistemi</h3><p>Gezegenleri ve uzayı yakından tanı.</p></div><span class="upcoming-index">04</span></article>
+        </div>
+        <div class="roadmap-note"><span class="note-mark" aria-hidden="true">i</span><p>Yol haritasındaki fikirler zaman içinde değişebilir. Bu kartlar henüz yayımlanmış ürünleri veya kesin çıkış tarihlerini ifade etmez.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" id="hakkinda">
+    <div class="wrap footer-main">
+      <a class="brand footer-brand" href="#anasayfa" aria-label="TDA Hub ana sayfa">
+        <span class="brand-mark" aria-hidden="true"><svg viewBox="0 0 36 36" fill="none"><path d="M7 10.5h22M18 10.5v15M23 25.5h6" stroke="currentColor" stroke-width="3" stroke-linecap="round"/><circle cx="27" cy="25.5" r="2.2" fill="currentColor"/></svg></span>
+        <span class="brand-name">TDA <span>HUB</span></span>
+      </a>
+      <p>İyi fikirler, birlikte daha uzağa gider.</p>
+      <a class="back-top" href="#anasayfa">Başa dön <span aria-hidden="true">↑</span></a>
+    </div>
+    <div class="wrap footer-bottom"><span>© <span id="currentYear">2026</span> TDA Hub</span><span>Bağımsız proje keşif sayfası</span></div>
+  </footer>
+</body>
+</html>
